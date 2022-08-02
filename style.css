@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+}
+html,body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+}
+
+.header {
+    width: 80%;
+    border: 10px;
+    padding-left: 100px;
+    margin-bottom: 50px;
+    border-color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 35px;
+    font-weight: 900;
+    color: chocolate;
+    text-shadow: 5px 10px 10px;
+}
+
+.inputSection {
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 20px 5px 20px 5px;
+}
+
+.editSection {
+    display: none;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 20px 5px 20px 5px;
+}
+
+
+.titleSection {
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.iTitle {
+    font-size: large;
+    /* color: red; */
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.userInput {
+    min-width: 98%;
+    max-width: 98%;
+    /* min-width: 250px; */
+    font-size: 12px;
+    font-family: monospace;
+    padding: 5PX;
+    
+}
+
+input{
+    height: 35px;
+}
+
+.userInput:focus, .userInput:hover {
+    font-size: larger;
+}
+
+textarea{
+    height: 200px;
+    min-height: 150px;
+    max-height: 250px;
+}
+
+.userData {
+    /* background-color: rgb(255, 255, 255); */
+    width: 80%;
+    /* width: 500px; */
+    /* display: flex; */
+    /* justify-content: center; */
+    margin: auto;
+    margin-top: 20px;
+    
+}
+#userData {
+ 
+    max-height:400px ;
+    overflow-y: auto; 
+}
+
+.dataTitle {
+    font-size: 22px;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.buttonSection button{
+    margin: 1px;
+    width: 90px;
+    height: 25px;
+    border-radius: 5px;
+}
+button{
+    margin: 1px;
+    width: 60px;
+    height: 20px;
+    border-radius: 3px;
+    border : 1px solid rgb(250, 231, 231); 
+}
+button:hover{
+    background-color: #8c8d8d;
+    color: white;
+}
+
+table, th, td {
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+    word-wrap: break-word;
+    inline-size: 50px;
+    overflow-wrap: break-word;
+    border: 1px solid rgb(211, 205, 205);
+}
+
+th, thead{
+    position: sticky;
+    top:0px;
+}
+table {
+    width: 100%;
+    margin: auto;
+    border: 1px solid rgb(252, 214, 167);
+
+}
+
+thead{background-color:rgb(252, 214, 167);}
+
+
+tbody:nth-child(even) {background-color: #fcecec;}
+tbody:nth-child(odd) {background-color: rgb(252, 227, 227);}
+
+tbody:hover{
+    box-sizing: border-box;
+    background-color: hsl(55, 100%, 96%);
+    /* font-size: 17px; */
+}
+
+@media (max-width:400px) {
+    .inputSection {
+        width: 90%;
+    } 
+    .editSection {
+        width: 90%;
+    }
+    .userData{
+        width: 100%;
+    }
+    table {
+        width: 110%;
+        margin: auto;
+    }
+    .tableDate{
+        font-size: smaller;
+        
+    }
+}
+@media (max-width:600px) {
+    .inputSection {
+        width: 80%;
+    }
+    .editSection {
+        width: 80%;
+    }
+    .userData{
+        width: 100%;
+    }
+    table {
+        width: 80%;
+        margin: auto;
+    }
+   
+}
+
